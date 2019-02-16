@@ -53,9 +53,9 @@ COOKIES_DEBUG = True
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
    'Login_code01.middlewares.RandomUserAgentMiddlewares': 543,
-
+'Login_code01.middlewares.ChickUserAgent':545,
+#'Login_code01.middlewares.ProxyMiddlewares':544
 }
-
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
@@ -88,3 +88,9 @@ DOWNLOADER_MIDDLEWARES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+UserAgent_List = [
+        'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/536.36',
+        'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+        'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/538.36',
+        'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/539.36'
+ ]
